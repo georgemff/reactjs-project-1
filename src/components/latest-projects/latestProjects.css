@@ -4,3 +4,24 @@
     padding: 100px;
     background-color: #fef7ec;
 }
+.latest-projects > .projects-title {
+    position: relative;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+.latest-projects > .projects-title > img {
+    position: absolute;
+    height: 14px;
+    bottom: -19px;
+    left: 8ch;
+}
+.latest-projects > .projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.latest-projects > .projects-cards > * {
+    width: 30%!important;
+}
