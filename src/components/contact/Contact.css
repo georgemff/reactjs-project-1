@@ -8,6 +8,7 @@
     border: 2px solid #18171c;
     background-color: #FFF;
     padding: 35px;
+    height: fit-content;
 }
 .contact-form > h4 {
     font-size: 32px;
@@ -38,4 +39,26 @@
 
 .contact-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-item {
+    width: 60%;
+    position: relative;
+}
+
+.contact-info > .contact-item:not(:first-child) {
+    margin-top: 1rem;
+    padding-top: 20px;
+}
+.contact-item:not(:first-child)::after {
+    content: "";
+    position: absolute;
+    left: 75px;
+    right: 0;
+    top: 0;
+    background: #18171c;
+    height: 2px;
 }

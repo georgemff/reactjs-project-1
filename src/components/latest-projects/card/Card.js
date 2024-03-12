@@ -64,7 +64,8 @@ function Card(props) {
                     <CardTitle>{props.title}</CardTitle>
                     <CardCategory>{props.category}</CardCategory>
                 </CardDescriptionWrapper>
-                <Arrow>1</Arrow>
+                <Arrow>
+                </Arrow>
             </CardFooter>
         </CardWrapper>
     )

@@ -31,7 +31,7 @@ const TextAreaElement = styled.textarea`
 function Input(props) {
     return (
         <InputWrapper>
-            <label for={props.id}>{props.label}</label>
+            <label>{props.label}</label>
             {
                 props.type === 'textarea' ?
                      <TextAreaElement 

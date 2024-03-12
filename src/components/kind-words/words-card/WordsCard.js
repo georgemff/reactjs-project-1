@@ -6,7 +6,12 @@ const WordsCardWrapper = styled.div`
     align-items: center;
     padding: 1.5rem;
     border: 2px solid #18171c;
+    transition: box-shadow 0.2s linear;
     user-select: none;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 3px 3px 0px 0px rgba(0,0,0,0.75);
+    }
 `
 
 const WordsCardHeader = styled.div`

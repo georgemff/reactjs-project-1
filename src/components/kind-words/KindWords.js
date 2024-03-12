@@ -1,5 +1,5 @@
 import { ContentWrapper } from "../../shared/styled-components/ContentWrapper";
-import TitleHeader from "../../shared/title-header/TitleHeader";
+import TitleHeader from "../../shared/components/title-header/TitleHeader";
 import "./KindWords.css"
 import WordsCard from "./words-card/WordsCard";
 import { kindWordsData } from "./words-data/data";
