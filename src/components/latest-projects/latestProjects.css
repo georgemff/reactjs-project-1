@@ -1,27 +1,16 @@
-.latest-projects {
-    width: 100%;
-    min-height: 500px;
-    padding: 100px;
-    background-color: #fef7ec;
-}
-.latest-projects > .projects-title {
-    position: relative;
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 45px;
-}
-.latest-projects > .projects-title > img {
-    position: absolute;
-    height: 14px;
-    bottom: -19px;
-    left: 8ch;
-}
-.latest-projects > .projects-cards {
+.latest-projects > .latest-projects-content > .projects-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    row-gap: 1rem;
 }
 
-.latest-projects > .projects-cards > * {
-    width: 30%!important;
+.latest-projects .projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+
+.latest-projects .projects-cards > .card {
+    padding: 0 8px;
+    width: 33.3%!important;
 }

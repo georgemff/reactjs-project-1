@@ -1,4 +1,3 @@
-import React from "react";
 
 import styled from "styled-components";
 
@@ -30,6 +29,7 @@ const CardDescriptionWrapper = styled.div`
 `
 
 const CardTitle = styled.p`
+    font-weight: bold;
     font-size: 20px;
     color: #18171c;
     margin: 0 0 8px;
@@ -55,7 +55,7 @@ function Card(props) {
         <CardWrapper>
             <CardImage>
                 <img 
-                    src="https://boston-react.vercel.app/assets/img/project-1.jpg" 
+                    src="/images/card-cover.jpg" 
                     style={{width: '100%'}}
                     alt="cover"/>
             </CardImage>

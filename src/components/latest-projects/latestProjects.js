@@ -1,21 +1,23 @@
+import { ContentWrapper } from "../../shared/styled-components/ContentWrapper";
+import TitleHeader from "../../shared/title-header/TitleHeader";
 import Card from "./card/Card";
-import "./latestProjects.css";
+import "./LatestProjects.css";
 
 function LatestProjects() {
     return (
-      <section className="latest-projects">
-            <h3 className="projects-title">
-                Latest Projects 
-                <img src="https://boston-react.vercel.app/assets/img/title.svg" alt="decor" />
-            </h3>
-            <div className="projects-cards">
-                <Card title="hello" category="Web"/>
-                <Card title="hello" category="Web"/>
-                <Card title="hello" category="Web"/>
-                <Card title="hello" category="Web"/>
-                <Card title="hello" category="Web"/>
-                <Card title="hello" category="Web"/>
-            </div>
+      <section className="latest-projects bg-yellow py-100">
+            <ContentWrapper>
+                <TitleHeader title="latest projects" labelText="Portfolio" />
+                <div className="projects-cards">
+                    {
+                        [1,2,3,4,5,6].map(el => (
+                            <div className="card" key={el}>
+                                <Card title="Agency Landing page" category="Web/WordPress"/>
+                            </div>
+                        ))
+                    }
+                </div>
+            </ContentWrapper>
       </section>  
     );
 }

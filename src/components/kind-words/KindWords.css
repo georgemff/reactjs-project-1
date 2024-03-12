@@ -1,0 +1,6 @@
+
+.kind-words .words {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1rem;
+}
